@@ -1,13 +1,9 @@
 html(lang='en')
 	head
-		meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+		meta(content='charset=UTF-8')
 		meta(name='viewport', content='width=device-width')
-		// normalize and html5 boilerplate resets
+		link(rel='stylesheet', href='/stylesheets/main.css')
 		link(rel='stylesheet', href='/blogAoP_files/reset.css')
-		//if lte IE 9
-		//- script(src='templates/SuperFlat/resources/js/html5shiv.js')
-		//- script(src='templates/SuperFlat/resources/js/html5shiv-printshiv.js')
-
 		title The Apprentice of Peace Wellness Studio
 		meta(name='description', content='')
 		meta(name='keywords', content='')
@@ -34,20 +30,20 @@ html(lang='en')
 							.yola_inner_nav_wrap
 								.sys_navigation
 									ul.sys_navigation
-										li#ys_menu_0.first
-											a(href='http://www.aopeacewellness.com/', title='Home') Home
+										li#ys_menu_0.selected.first
+											a(href='/main', title='Home') Home
 										li#ys_menu_1
-											a(href='http://www.aopeacewellness.com/about-us.php', title='About Us') About Us
+											a(href='/about', title='About Us') About Us
 										li#ys_menu_2
-											a(href='http://www.aopeacewellness.com/services.php', title='Services') Services
+											a(href='/services', title='Services') Services
 										li#ys_menu_3
-											a(href='http://www.aopeacewellness.com/product.php', title='Product') Product
-										li#ys_menu_4.selected
-											a(href='http://www.aopeacewellness.com/blog.php', title='Blog') Blog
+											a(href='/product', title='Product') Product
+										li#ys_menu_4
+											a(href='/blog', title='Blog') Blog
 										li#ys_menu_5
-											a(href='http://www.aopeacewellness.com/contact-us.php', title='Contact Us') Contact Us
+											a(href='/contact', title='Contact Us') Contact Us
 										li#ys_menu_6.last
-											a(href='http://www.aopeacewellness.com/class-schedule.php', title='Class Schedule') Class Schedule
+											a(href='/schedule', title='Class Schedule') Class Schedule
 									script.
 										$(document).ready(function() {
 										flyoutMenu.initFlyoutMenu([
