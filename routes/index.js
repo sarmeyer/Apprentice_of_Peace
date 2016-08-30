@@ -11,8 +11,8 @@ router.get('/about', function(req, res, next){
 router.get('/services', function(req, res, next){
   res.render('services');
 })
-router.get('/product', function(req, res, next){
-  res.render('product');
+router.get('/products', function(req, res, next){
+  res.render('products');
 })
 router.get('/blog', function(req, res, next){
   res.render('blog');

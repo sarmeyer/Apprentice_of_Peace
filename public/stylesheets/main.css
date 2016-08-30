@@ -437,10 +437,22 @@ blockquote {
     text-decoration: none;
     opacity: 0.8;
 }
+div.sys_text_widget img.float-left {
+    float: left;
+    margin: 10px 15px 10px 0;
+}
+div.sys_text_widget img.float-right {
+    position: relative;
+    margin: 10px 0 10px 15px;
+}
+div.sys_text_widget img {
+    margin: 4px;
+}
 
 /*footer*/
 
-a#sys_yolacredit_a1:hover {
+
+/*a#sys_yolacredit_a1:hover {
     text-decoration: underline!important;
     font-weight: normal!important;
 }
@@ -464,4 +476,4 @@ a#sys_yolacredit_a2 {
 }
 #sys_yolacredit_right {
     background: url("classes/commons/yola_footer/png/yolaTag.png") top right no-repeat;
-}
+}*/
