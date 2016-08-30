@@ -1,3 +1,4 @@
+@import url('//fonts.googleapis.com/css?family=Source+Sans+Pro|Voltaire');
 .yola_bg_overlay {
     display: table;
     position: absolute;
@@ -5,7 +6,7 @@
     min-width: 100%;
     width: 100%;
     height: 100%;
-    background-image: url("templates/SuperFlat/presets/imbuia/wood_texture.jpg");
+    background-image: url("http://www.bikefinity.com/templates/SuperFlat_v2/presets/imbuia/wood_texture.jpg");
     background-repeat: repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -435,4 +436,32 @@ blockquote {
 .sys_layout .sys_button.solid a:hover {
     text-decoration: none;
     opacity: 0.8;
+}
+
+/*footer*/
+
+a#sys_yolacredit_a1:hover {
+    text-decoration: underline!important;
+    font-weight: normal!important;
+}
+a#sys_yolacredit_a2:hover {
+    text-decoration: underline!important;
+    font-weight: normal!important;
+}
+a#sys_yolacredit_a1 {
+    text-decoration: none!important;
+    font-weight: normal!important;
+}
+a#sys_yolacredit_a2 {
+    text-decoration: none!important;
+    font-weight: normal!important;
+}
+#sys_yolacredit_left {
+    background: url("classes/commons/yola_footer/png/yolaTag.png") top left no-repeat;
+}
+#sys_yolacredit_center {
+    background: url("classes/commons/yola_footer/png/yolaTag.png") -10px top no-repeat;
+}
+#sys_yolacredit_right {
+    background: url("classes/commons/yola_footer/png/yolaTag.png") top right no-repeat;
 }
