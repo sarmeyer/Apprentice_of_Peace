@@ -1,4 +1,7 @@
-@import url('//fonts.googleapis.com/css?family=Source+Sans+Pro|Voltaire');
+@import 'https://fonts.googleapis.com/css?family=Merriweather';
+html {
+    font-family: 'Merriweather', serif;
+}
 .yola_bg_overlay {
     display: table;
     position: absolute;
@@ -477,3 +480,5 @@ a#sys_yolacredit_a2 {
 #sys_yolacredit_right {
     background: url("classes/commons/yola_footer/png/yolaTag.png") top right no-repeat;
 }*/
+
+*/

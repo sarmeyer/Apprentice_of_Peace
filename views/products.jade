@@ -2,7 +2,7 @@ html.no-js(lang='en')
 	head
 		meta(content='charset=UTF-8')
 		meta(name='viewport', content='width=device-width')
-		link(rel='stylesheet', href='/stylesheet/main.css')
+		link(rel='stylesheet', href='/stylesheets/main.css')
 		title The Apprentice of Peace Wellness Studio
 		meta(name='description', content='')
 		meta(name='keywords', content='')
@@ -38,7 +38,7 @@ html.no-js(lang='en')
 										li#ys_menu_2
 											a(href='/services', title='Services') Services
 										li#ys_menu_3
-											a(href='/products', title='Product') Product
+											a(href='/products', title='Products') Products
 										li#ys_menu_4
 											a(href='/blog', title='Blog') Blog
 										li#ys_menu_5
@@ -65,8 +65,8 @@ html.no-js(lang='en')
 										"children": []
 										}, {
 										"href": "product.php",
-										"title": "Product",
-										"name": "Product",
+										"title": "Products",
+										"name": "Products",
 										"children": []
 										}, {
 										"href": "blog.php",
@@ -120,9 +120,8 @@ html.no-js(lang='en')
 												#I48_sys_txt.sys_txt.sys_text_widget.new-text-widget(systemelement='true', style='margin:0px; padding:0px; color:; font:; background-color:;')
 													p
 														| The Apprentice of Peace: An Uncommon Dialogue, is now available for sale here on our website by clicking one of the buttons below or by going online. Get your LIMITED EDITION copy of the book for only $15.99 or get a package that
-														| includes an Apprentice of Peace t-shirt for $26.99. SHIPPING IS INCLUDED!! Email us for more info at
-														a(href='mailto:aopwellness@gmail.com') aopwellness@gmail.com
-														|   ORDER NOW!!!
+														| includes an Apprentice of Peace t-shirt for $26.99. SHIPPING IS INCLUDED!! Email us for more info at 
+														a(href='mailto:aopwellness@gmail.com') aopwellness@gmail.com. 
 									tr
 										td
 											div(style='font-size:0px; height:5px')
@@ -131,7 +130,7 @@ html.no-js(lang='en')
 											#I58.Text_2_Default(style='display:block;clear: both;')
 												#I58_sys_txt.sys_txt.sys_text_widget.new-text-widget(systemelement='true', style='margin:0px; padding:0px; color:; font:; background-color:;')
 													p
-														| Get your copy of the Apprentice of Peace: An Uncommon Dialogue at the discount price of $15.99. You can also order the book at your local bookstore's order desk or at these online bookstores: Amazon.com, Barnesandnoble.com, Xlibris.com, and
+														| You can also order the book at your local bookstore's order desk or at these online bookstores: Amazon.com, Barnesandnoble.com, Xlibris.com, and
 														| Lulu.com. Click below to order the book at the discount price.
 											#I59.HTML_Default(style='display:block;clear: both;text-align:left;')
 												#I59_html
@@ -156,17 +155,11 @@ html.no-js(lang='en')
 														tr
 															td
 																.imgDiv
-																	img.image(src='/productsAoP_files/1420260_739179882778718_835370458_n.jpg')
+																	img.image(src='/images/book.jpg')
 																h3.price $ 26.99 USD
-																.cartbutton
-																	form(name='_xclick', target='_blank', action='https://www.paypal.com/us/cgi-bin/webscr', method='post')
-																		input(type='hidden', name='cmd', value='_xclick')
-																		input(type='hidden', name='business', value='aopwellness@gmail.com')
-																		input(type='hidden', name='currency_code', value='USD')
-																		input(type='hidden', name='item_name', value='Limited Edition Book & T-Shirt Package               ')
-																		input(type='hidden', name='amount', value='26.99')
-																		input.button(type='image', src='/productsAoP_files/btn_buynow_LG.gif', style='width: 107px; height:26px', border='0', name='submit', alt='Buy Now')
-																		input(type='hidden', name='bn', value='Yola_eCommerce_WPS_US')
+																form(action='/order', method='POST')
+																	script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_0GNrAomq4Fj1xQVQ6eoy1hX9', data-amount='2699', data-name='Apprentice of Peace', data-shipping-address='true', data-billing-address='true', data-description='t-shirt and book package', data-image='https://images-na.ssl-images-amazon.com/images/I/51AxMcBmrrL.jpg')
+
 														tr
 															td(align='center')
 																.desc
