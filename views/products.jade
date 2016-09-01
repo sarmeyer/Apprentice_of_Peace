@@ -58,15 +58,17 @@ html.no-js(lang='en')
 				main.yola_content_wrap(role='main')
 					.yola_content_column
 						div.well.singleBook.col-md-12
+							if thanks
+								h1= thanks
 							div.col-md-3
 								img.bookImg(src='/images/book.jpg')
 							div.col-md-9
 								| The Apprentice of Peace: An Uncommon Dialogue, is now available for sale here on our website by clicking the button below. 
 								| Get your LIMITED EDITION copy of the book for only $15.99. Shipping and tax is included!! Email any questions to 
 								a(href='mailto:aopwellness@gmail.com') aopwellness@gmail.com. 
-								h3.price $ 26.99 USD
+								h3.price $ 15.99 USD
 								form(action='/order', method='POST')
-								script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_0GNrAomq4Fj1xQVQ6eoy1hX9', data-amount='2699', data-name='Apprentice of Peace', data-shipping-address='true', data-billing-address='true', data-description='t-shirt and book package', data-image='https://images-na.ssl-images-amazon.com/images/I/51AxMcBmrrL.jpg')
+								script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_0GNrAomq4Fj1xQVQ6eoy1hX9', data-amount='1599', data-name='Apprentice of Peace', data-shipping-address='true', data-billing-address='true', data-description='book', data-image='https://images-na.ssl-images-amazon.com/images/I/51AxMcBmrrL.jpg')
 
 						div.well 
 							| You can also order the book at your local bookstore or at these online bookstores: Amazon.com, Barnesandnoble.com, Xlibris.com, and
