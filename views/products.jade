@@ -3,6 +3,7 @@ html.no-js(lang='en')
 		meta(content='charset=UTF-8')
 		meta(name='viewport', content='width=device-width')
 		link(rel='stylesheet', href='/stylesheets/main.css')
+		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
 		title The Apprentice of Peace Wellness Studio
 		meta(name='description', content='')
 		meta(name='keywords', content='')
@@ -45,131 +46,45 @@ html.no-js(lang='en')
 											a(href='/contact', title='Contact Us') Contact Us
 										li#ys_menu_6.last
 											a(href='/schedule', title='Class Schedule') Class Schedule
-									script.
-										$(document).ready(function() {
-										flyoutMenu.initFlyoutMenu([
-										{
-										"href": "index.php",
-										"title": "Home",
-										"name": "Home",
-										"children": []
-										}, {
-										"href": "about-us.php",
-										"title": "About Us",
-										"name": "About Us",
-										"children": []
-										}, {
-										"href": "services.php",
-										"title": "Services",
-										"name": "Services",
-										"children": []
-										}, {
-										"href": "product.php",
-										"title": "Products",
-										"name": "Products",
-										"children": []
-										}, {
-										"href": "blog.php",
-										"title": "Blog",
-										"name": "Blog",
-										"children": []
-										}, {
-										"href": "contact-us.php",
-										"title": "Contact Us",
-										"name": "Contact Us",
-										"children": []
-										}, {
-										"href": "class-schedule.php",
-										"title": "Class Schedule",
-										"name": "Class Schedule",
-										"children": []
-										}
-										], "flyover");
-										});
 								div(style='clear:both;')
 						.yola_outer_heading_wrap
 							.yola_inner_heading_wrap
 								.yola_innermost_heading_wrap
 									h1
 										a#sys_heading.yola_hide_logo(href='http://www.aopeacewellness.com/')
-											img.yola_site_logo(src='http://www.aopeacewellness.com/product.php', alt='The Apprentice of Peace Wellness Studio')
 											span The Apprentice of Peace Wellness Studio
 									h2.yola_site_tagline(style='display:block')
 										span Health, Wellness, and Fitness
 				main.yola_content_wrap(role='main')
 					.yola_content_column
-						.yola_inner_content_column
-							div(style='padding:0; height:0; clear:both;')  
-							table.layout_1-over-3.sys_layout(style='width: 100%; padding: 0px; margin: 0px; border-collapse: collapse')
-								tbody
-									tr#layout_row1
-										td#sys_region_1.zone_top(width='100%', colspan='5', style='margin:0px; padding:5px; vertical-align:top; line-height:normal; min-width:100px')
-											#I48.Text_2_Default(style='display:block;clear: both;margin:0 0 0 0;')
-												style(type='text/css').
-													div.sys_text_widget img.float-left {
-													float: left;
-													margin: 10px 15px 10px 0;
-													}
-													div.sys_text_widget img.float-right {
-													position: relative;
-													margin: 10px 0 10px 15px;
-													}
-													div.sys_text_widget img {
-													margin: 4px;
-													}
-												#I48_sys_txt.sys_txt.sys_text_widget.new-text-widget(systemelement='true', style='margin:0px; padding:0px; color:; font:; background-color:;')
-													p
-														| The Apprentice of Peace: An Uncommon Dialogue, is now available for sale here on our website by clicking one of the buttons below or by going online. Get your LIMITED EDITION copy of the book for only $15.99 or get a package that
-														| includes an Apprentice of Peace t-shirt for $26.99. SHIPPING IS INCLUDED!! Email us for more info at 
-														a(href='mailto:aopwellness@gmail.com') aopwellness@gmail.com. 
-									tr
-										td
-											div(style='font-size:0px; height:5px')
-									tr#layout_row2
-										td#sys_region_2.zone_left(width='33.3%', style='margin:0px; padding:5px; vertical-align:top; line-height:normal; min-width:100px')
-											#I58.Text_2_Default(style='display:block;clear: both;')
-												#I58_sys_txt.sys_txt.sys_text_widget.new-text-widget(systemelement='true', style='margin:0px; padding:0px; color:; font:; background-color:;')
-													p
-														| You can also order the book at your local bookstore's order desk or at these online bookstores: Amazon.com, Barnesandnoble.com, Xlibris.com, and
-														| Lulu.com. Click below to order the book at the discount price.
-											#I59.HTML_Default(style='display:block;clear: both;text-align:left;')
-												#I59_html
-													a(href='http://www.lulu.com/commerce/index.php?fBuyContent=14831286')
-														img(src='/productsAoP_files/book.gif', border='0', alt='Support independent publishing: Buy this book on Lulu.')
-										td
-											div(style='font-size:0px; width:5px')
-										td#sys_region_3.zone_center(width='33.3%', style='margin:0px; padding:5px; vertical-align:top; line-height:normal; min-width:100px')
-											#I61.Image_Default(style='display:block;clear: both;text-align:center;')
-												img#I61_img(src='/productsAoP_files/aopphoto.jpg.opt382x228o0,0s382x228.jpg', style='width:382px; border:none;')
-										td
-											div(style='font-size:0px; width:5px')
-										td#sys_region_4.zone_right(width='33.3%', style='margin:0px; padding:5px; vertical-align:top; line-height:normal; min-width:100px')
-											#I55.PayPalProduct_Default(style='display:block;clear: both;margin:0 0 -10px 0;')
-												table.productTable
-													tbody
-														tr
-															td(colspan='2')
-																.titleTop
-																	h2
-																		| Limited Edition Book & T-Shirt Package
-														tr
-															td
-																.imgDiv
-																	img.image(src='/images/book.jpg')
-																h3.price $ 26.99 USD
-																form(action='/order', method='POST')
-																	script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_0GNrAomq4Fj1xQVQ6eoy1hX9', data-amount='2699', data-name='Apprentice of Peace', data-shipping-address='true', data-billing-address='true', data-description='t-shirt and book package', data-image='https://images-na.ssl-images-amazon.com/images/I/51AxMcBmrrL.jpg')
+						div.well.singleBook.col-md-12
+							div.col-md-3
+								img.bookImg(src='/images/book.jpg')
+							div.col-md-9
+								| The Apprentice of Peace: An Uncommon Dialogue, is now available for sale here on our website by clicking the button below. 
+								| Get your LIMITED EDITION copy of the book for only $15.99. Shipping and tax is included!! Email any questions to 
+								a(href='mailto:aopwellness@gmail.com') aopwellness@gmail.com. 
+								h3.price $ 26.99 USD
+								form(action='/order', method='POST')
+								script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_0GNrAomq4Fj1xQVQ6eoy1hX9', data-amount='2699', data-name='Apprentice of Peace', data-shipping-address='true', data-billing-address='true', data-description='t-shirt and book package', data-image='https://images-na.ssl-images-amazon.com/images/I/51AxMcBmrrL.jpg')
 
-														tr
-															td(align='center')
-																.desc
-																	p INCLUDES SHIPPING
-																	p
-																		| Get your limited edition shirt and copy of the book, The Apprentice of Peace: An Uncommon Dialogue
-																	p Shirt colors: Black, Brown, Yellow, White, Blue
-																	p Sizes: M - XXL
-																	p Email for larger sizes
-							div(style='padding:0; height:0; clear:both;')  
+						div.well 
+							| You can also order the book at your local bookstore or at these online bookstores: Amazon.com, Barnesandnoble.com, Xlibris.com, and
+							| Lulu.com. Click below to order the book at the discount price.
+							#I59.HTML_Default(style='display:block;clear: both;text-align:left;')
+								#I59_html
+									a(href='http://www.lulu.com/commerce/index.php?fBuyContent=14831286')
+										img(src='/productsAoP_files/book.gif', border='0', alt='Support independent publishing: Buy this book on Lulu.')
+
+						div.well.package.col-md-12
+							div.col-md-12
+								img#I61_img(src='/productsAoP_files/aopphoto.jpg.opt382x228o0,0s382x228.jpg', style='width:382px; border:none;')
+							div.col-md-9
+								h2 Limited Edition Book & T-Shirt Package
+								p INCLUDES SHIPPING
+								p Shirt colors: Black, Brown, Yellow, White, Blue
+								p Sizes: M, L, XL, XXL
+								p Email us for larger sizes
 				.yola_footer_wrap
 					.yola_footer_column
 						footer#yola_style_footer
@@ -191,90 +106,3 @@ html.no-js(lang='en')
 													gapi.plusone.go();
 							p(style='float:right; margin:0;') 1355 S. Colorado Blvd., Suite C10, Denver, Colorado 80222, US | 303-537-2988
 							div(style='clear:both; height:0;')
-					div
-						style(type='text/css').
-							a#sys_yolacredit_a1:hover {
-							text-decoration: underline!important;
-							font-weight: normal!important;
-							}
-							a#sys_yolacredit_a2:hover {
-							text-decoration: underline!important;
-							font-weight: normal!important;
-							}
-							a#sys_yolacredit_a1 {
-							text-decoration: none!important;
-							font-weight: normal!important;
-							}
-							a#sys_yolacredit_a2 {
-							text-decoration: none!important;
-							font-weight: normal!important;
-							}
-							#sys_yolacredit_left {
-							background: url("classes/commons/yola_footer/png/yolaTag.png") top left no-repeat;
-							}
-							#sys_yolacredit_center {
-							background: url("classes/commons/yola_footer/png/yolaTag.png") -10px top no-repeat;
-							}
-							#sys_yolacredit_right {
-							background: url("classes/commons/yola_footer/png/yolaTag.png") top right no-repeat;
-							}
-						//if lte IE 6
-							style(type='text/css').
-								#sys_yolacredit_right {background:url(classes/commons/yola_footer/gif/yolaTag_03.gif) top right} #sys_yolacredit_left {background-image:url(classes/commons/yola_footer/gif/yolaTag_01.gif)} #sys_yolacredit_center {background-image:url(classes/commons/yola_footer/gif/yolaTag_02.gif)}
-						#sys_yolacredit(style='margin: 1em auto;text-align:center; width:220px; display:block; visibility:visible; height:35px', title='Visit Yola.com to create your own free website')
-							#sys_yolacredit_left(style='width:6px; height:32px; float:left;margin:0px; padding:0px')
-							#sys_yolacredit_center(style='height:35px; float:left;padding-left:3px; margin:0px; background-repeat: repeat-x; display:block; visibility:visible; font-family: Arial; font-size: 9px; line-height:33px;color: #000;')
-								| Make a
-								a#sys_yolacredit_a1(href='https://www.yola.com/', style='color:#000; display:inline; visibility: visible;font-family: Arial; font-size: 9px;', target='_blank') Free Website
-								|                                 with
-								span#sys_yolacredit_a2(style='color: #E7004F;display:inline;visibility:visible;font-family:Arial;font-size:9px;', target='_blank') Yola.
-							#sys_yolacredit_right(style='width:8px; height:32px; float:left; margin:0px; padding:0px')
-							div(style='clear:both')
-					// .inner_bg_overlay
-					// #sys_background / .bg_overlay
-					script(type='text/javascript').
-						var _yts = _yts || [];
-						_yts.push(["_siteId", "8a4986c942e304f00142fa2845950a2f"]);
-						_yts.push(["_trackPageview"]);
-						(function() {
-						var yts = document.createElement("script");
-						yts.type = "text/javascript";
-						yts.async = true;
-						yts.src = "//analytics.yolacdn.net/tracking.js";
-						(document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(yts);
-						})();
-					// Start Quantcast tag
-					script(type='text/javascript', src='/productsAoP_files/quant.js')
-					script(type='text/javascript').
-						_qacct = "p-b8x17GqsQ_656";
-						quantserve();
-					noscript
-						| <a href="http://www.quantcast.com/p-b8x17GqsQ_656" target="_blank"><img src="//pixel.quantserve.com/pixel/p-b8x17GqsQ_656.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/></a>
-					// End Quantcast tag
-		#ys_submenu_0.ys_submenu(style='font-size: 16px; font-family: sans-serif; display: none;')
-			.ys_submenu_inner
-				ul
-		#ys_submenu_1.ys_submenu(style='font-size: 16px; font-family: sans-serif; display: none;')
-			.ys_submenu_inner
-				ul
-		#ys_submenu_2.ys_submenu(style='font-size: 16px; font-family: sans-serif; display: none;')
-			.ys_submenu_inner
-				ul
-		#ys_submenu_3.ys_submenu(style='font-size: 16px; font-family: sans-serif; top: 35px; left: 741.375px; display: none; width: 150px;')
-			.ys_submenu_inner
-				ul
-		#ys_submenu_4.ys_submenu(style='font-size: 16px; font-family: sans-serif; display: none;')
-			.ys_submenu_inner
-				ul
-		#ys_submenu_5.ys_submenu(style='font-size: 16px; font-family: sans-serif; display: none;')
-			.ys_submenu_inner
-				ul
-		#ys_submenu_6.ys_submenu(style='font-size: 16px; font-family: sans-serif; display: none;')
-			.ys_submenu_inner
-				ul
-		iframe#oauth2relay697405769(name='oauth2relay697405769', src='/productsAoP_files/postmessageRelay.html', tabindex='-1', style='width: 1px; height: 1px; position: absolute; top: -100px;')
-		#_swcButton(style='z-index: 17000000; position: fixed; color: rgb(255, 255, 255); padding: 5px 10px; font-family: Calibri, Helvetica, Arial; font-weight: bold; font-size: 16px; top: auto; bottom: 0px; left: auto; right: 20px; margin: 0px; border-radius: 10px 10px 0px 0px; border-width: 2px 2px 0px; border-style: solid; border-color: rgb(255, 255, 255); transform: rotate(0deg); transition: background 0.3s ease, padding 0.4s ease; cursor: pointer; background-color: rgb(241, 194, 50);') How can we help you?
-		#_swciFrmBlackout(style='z-index: 17000001; width: 1440px; max-width: 1440px; height: 732px; max-height: 732px; left: 0px; top: 0px; position: fixed; transition: opacity 0.5s ease, visibility 0.5s ease; display: block; opacity: 0; visibility: hidden; background-color: rgb(0, 0, 0);')
-		#_swciFrmBox(style='z-index: 17000002; height: 398px; transition: opacity 0.5s ease, visibility 0.5s ease; display: block; opacity: 0; visibility: hidden; position: fixed; top: 50%; left: 50%; width: 900px; max-width: 900px; margin: -199px 0px 0px -450px; max-height: 398px;')
-			iframe#_swciFrm(src='/productsAoP_files/saved_resource.html', style='border: 2px solid rgb(0, 0, 0); height: 398px; transition: height 0.5s ease; width: 900px; max-width: 900px; max-height: 398px; background-color: rgb(255, 255, 255);')
-		iframe#rufous-sandbox(scrolling='no', frameborder='0', allowtransparency='true', allowfullscreen='true', style='position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;', src='/productsAoP_files/saved_resource(1).html')

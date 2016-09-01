@@ -1,6 +1,10 @@
-@import 'https://fonts.googleapis.com/css?family=Merriweather';
-html {
-    font-family: 'Merriweather', serif;
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+body {
+    font-family: 'Merriweather', serif !important;
+}
+.bookImg {
+    width: 12em;
+    height: 17em;
 }
 .yola_bg_overlay {
     display: table;
