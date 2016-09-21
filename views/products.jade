@@ -21,6 +21,9 @@ html.no-js(lang='en')
 		script(type='text/javascript', charset='utf-8', async='', src='/productsAoP_files/button.369579b2450be1b134e6754cd8501155.js')
 		script(type='text/javascript', src='/productsAoP_files/LoggingAgent')
 		script(type='text/javascript', src='/productsAoP_files/sw.js')
+		script(type="text/javascript" src="https://js.stripe.com/v2/")
+		script(type='text/javascript')
+			Stripe.setPublishableKey('pk_test_0GNrAomq4Fj1xQVQ6eoy1hX9')
 		script(src='/productsAoP_files/sw_connect.js')
 
 	body
@@ -58,8 +61,9 @@ html.no-js(lang='en')
 				main.yola_content_wrap(role='main')
 					.yola_content_column
 						div.well.singleBook.col-md-12
-							if thanks
-								h1= thanks
+							p The value of thanks is #{thanks}
+							if thanks == true
+								h1 Thank you for your purchase!
 							div.col-md-3
 								img.bookImg(src='/images/book.jpg')
 							div.col-md-9
@@ -67,8 +71,8 @@ html.no-js(lang='en')
 								| Get your LIMITED EDITION copy of the book for only $15.99. Shipping and tax is included!! Email any questions to 
 								a(href='mailto:aopwellness@gmail.com') aopwellness@gmail.com. 
 								h3.price $ 15.99 USD
-								form(action='/order', method='POST')
-								script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_0GNrAomq4Fj1xQVQ6eoy1hX9', data-amount='1599', data-name='Apprentice of Peace', data-shipping-address='true', data-billing-address='true', data-description='book', data-image='https://images-na.ssl-images-amazon.com/images/I/51AxMcBmrrL.jpg')
+								form(action='/order', method='POST' id='payment-form')
+									script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_0GNrAomq4Fj1xQVQ6eoy1hX9', data-amount='1599', data-name='Apprentice of Peace', data-shipping-address='true', data-billing-address='true', data-description='book', data-image='https://images-na.ssl-images-amazon.com/images/I/51AxMcBmrrL.jpg')
 
 						div.well 
 							| You can also order the book at your local bookstore or at these online bookstores: Amazon.com, Barnesandnoble.com, Xlibris.com, and

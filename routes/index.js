@@ -6,22 +6,22 @@ var stripe = require("stripe")("sk_test_je4ROTgvjNdXQ3tqF3iB8wrJ");
 router.get('/', function(req, res, next) {
   res.render('main');
 });
-router.get('/about', function(req, res, next){
+router.get('/about', function(req, res, next) {
   res.render('about');
 })
-router.get('/services', function(req, res, next){
+router.get('/services', function(req, res, next) {
   res.render('services');
 })
-router.get('/products', function(req, res, next){
+router.get('/products', function(req, res, next) {
   res.render('products');
 })
-router.get('/blog', function(req, res, next){
+router.get('/blog', function(req, res, next) {
   res.render('blog');
 })
-router.get('/contact', function(req, res, next){
+router.get('/contact', function(req, res, next) {
   res.render('contact');
 })
-router.get('/schedule', function(req, res, next){
+router.get('/schedule', function(req, res, next) {
   res.render('schedule');
 })
 
@@ -32,13 +32,15 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/order', function(req, res) {
-  var token = req.body.stripeToken;
+  Stripe.card.createToken(, stripeResponseHandler);
+
+      // var token = req.body.stripeToken;
       stripe.orders.create({
         currency: 'usd',
         items: [{
-            type: 'sku',
-            parent: 'sku_97DNpYPYh0SCZq'
-          }],
+          type: 'sku',
+          parent: 'sku_97DNpYPYh0SCZq'
+        }],
         shipping: {
           name: req.body.stripeShippingName,
           address: {
@@ -49,13 +51,18 @@ router.post('/order', function(req, res) {
           }
         },
         email: req.body.stripeEmail
-      }).then(function(order){
+      }).then(function(order, token) {
+        console.log('*****ORDER******');
+        console.log(order);
         stripe.orders.pay(order.id, {
           source: token
         }, function(err, order) {
+          console.log('**********');
+          console.log(err);
+          res.redirect('/products');
+          // called asynchronously
         });
-          res.render('/products', {thanks: "Thank you for your purchase!"});
       })
     })
 
-module.exports = router;
+      module.exports = router;
